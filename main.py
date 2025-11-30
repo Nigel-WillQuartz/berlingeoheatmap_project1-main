@@ -1,9 +1,13 @@
 
-currentWorkingDirectory = r"C:\Users\Home\Desktop\BHT_advanced_software_engineering_WiSe202526-main\berlingeoheatmap_project1-main\berlingeoheatmap_project1-main"
+
 #currentWorkingDirectory = "/mount/src/berlingeoheatmap1/"
 
 # -----------------------------------------------------------------------------
 import os
+
+currentWorkingDirectory = os.path.dirname(os.path.abspath("main.py"))
+
+
 os.chdir(currentWorkingDirectory)
 print("Current working directory\n" + os.getcwd())
 
